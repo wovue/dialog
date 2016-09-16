@@ -25,6 +25,9 @@
     "url": "https://github.com/wovue/dialog/issues"
   },
   "homepage": "https://wovue.github.io/dialog",
+  "dependencies": {
+    "vue": "^1.0.26"
+  },
   "peerDependencies": {
     "vue": "^1.0.21"
   },
