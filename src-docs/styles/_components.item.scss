@@ -29,6 +29,8 @@
 
     code {
       @include card(1);
+      display: block;
+      overflow-x: auto;
       padding: 1em;
       white-space: pre;
     }
