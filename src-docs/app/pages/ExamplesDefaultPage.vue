@@ -1,6 +1,6 @@
 <template>
   <section class="c-main__sub-section">
-    <h3 class="c-main__sub-heading u-gutter">Varius</h3>
+    <h3 class="c-main__sub-heading u-gutter">Various</h3>
     <div class="c-item u-gutter">
       <h4 class="c-item__heading">Disable close on esc</h4>
       <h5 class="c-item__sub-heading">Code:</h5>
