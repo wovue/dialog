@@ -1,5 +1,5 @@
 {
-  "name": "dialog",
+  "name": "wovue-dialog",
   "version": "1.0.0",
   "description": "Dialog (Modal) component for Vue.js",
   "main": "dist/dialog.js",
