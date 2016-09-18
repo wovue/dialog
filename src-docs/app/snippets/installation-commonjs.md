@@ -1,6 +1,5 @@
 ```js
-// app.js
-
+// with webpack you can import css
 require('wovue-dialog/dist/dialog.css')
 
 import Vue from 'vue'
