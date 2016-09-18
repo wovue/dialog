@@ -16,6 +16,7 @@ const dialogPlugin = {
     Vue.prototype.$wv.dialog = {
       toggle: toggleDialog
     }
+
     Vue.component('wv-dialog', Dialog)
     Vue.directive('dialog', directive)
   }
