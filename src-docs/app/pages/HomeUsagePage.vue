@@ -6,23 +6,31 @@
         <p>Here's an example:</p>
       </div>
       <h4 class="c-item__heading">Dialog</h4>
-      <div class="c-item__code-wrapper" v-html="snippets.primaryExample"></div>
+      <div class="c-item__code-wrapper" v-html="snippets.usage01"></div>
       <div class="c-item__description">
         <p>That's it!</p>
+      </div>
+      <h5 class="c-item__sub-heading">Result:</h5>
+      <div class="c-play-around">
+        <button v-dialog:toggle="dialog" type="button">Open dialog</button>
+        <wv-dialog ref="dialog">
+          <h1>Hello</h1>
+          <button v-dialog:toggle="dialog" type="button">Close dialog</button>
+        </wv-dialog>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-  import primaryExample from 'src-docs/app/snippets/primary-example.md'
+  import usage01 from 'src-docs/app/snippets/usage-01.md'
 
   export default {
     name: 'HomeUsagePage',
     data () {
       return {
         snippets: {
-          primaryExample
+          usage01
         }
       }
     }
