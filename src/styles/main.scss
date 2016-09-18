@@ -1,0 +1,28 @@
+/*------------------------------------*\
+  #ITCSS structure
+\*------------------------------------*/
+
+// VARIABLES
+@import "settings.config";
+
+
+
+
+
+// TOOLS
+@import "~wocss-tools-bem-constructor";
+
+
+
+
+
+// COMPONENTS
+@import "components.dialog";
+@import "components.dialog-overlay";
+
+
+
+
+
+// TRUMPS
+@import "trumps.transitions.scss"

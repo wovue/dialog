@@ -1,0 +1,26 @@
+.dialog {
+  &-transition {
+    transition: $transition-time transform $transition-function, $transition-time opacity $transition-function;
+  }
+
+  &-enter {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  &-leave {
+    opacity: 0;
+    transform: scale(.95);
+  }
+}
+
+.dialog-overlay {
+  &-transition {
+    transition: $transition-time opacity;
+  }
+
+  &-enter,
+  &-leave {
+    opacity: 0;
+  }
+}

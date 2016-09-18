@@ -1,15 +1,28 @@
-import component from './component'
+require('./styles/main.scss')
 
-let Vue = {}
+import Dialog from './Dialog'
+import {directive, toggleDialog} from './directive'
 
-let Dialog = {
+let Vue
+
+const dialogPlugin = {
   install (_Vue) {
     Vue = _Vue
-    Vue.component('dialog', component)
+
+    // register plugin options
+    if (!Vue.prototype.$wv) {
+      Vue.prototype.$wv = {}
+    }
+    Vue.prototype.$wv.dialog = {
+      toggle: toggleDialog
+    }
+    Vue.component('wv-dialog', Dialog)
+    Vue.directive('dialog', directive)
   }
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.component('dialog', Dialog)
+  window.Vue.component('wv-dialog', Dialog)
+  window.Vue.directive('dialog', directive)
 }
-export default Dialog
+export default dialogPlugin

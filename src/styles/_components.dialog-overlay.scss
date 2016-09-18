@@ -1,0 +1,4 @@
+@include component('dialog-overlay') {
+  position: fixed 0;
+  z-index: 999;
+}

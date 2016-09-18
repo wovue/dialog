@@ -1,0 +1,25 @@
+@include component('dialog') {
+  -webkit-overflow-scrolling: touch;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  padding: 1rem;
+  position: fixed 0;
+  width: 100%;
+  z-index: 1000;
+
+  &::after,
+  &::before {
+    content: '';
+    flex: 1 1 0;
+    width: 0;
+  }
+
+  @include element('content') {
+    background-color: #ffffff;
+    flex: none;
+    width: 100%;
+  }
+}
