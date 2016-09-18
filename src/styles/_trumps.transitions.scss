@@ -1,20 +1,15 @@
-.dialog {
-  &-transition {
-    transition: $transition-time transform $transition-function, $transition-time opacity $transition-function;
-  }
-
+.wv-dialog {
   &-enter {
-    opacity: 0;
-    transform: scale(1.02);
+    animation: wv-dialog-enter $transition-time $transition-function;
   }
 
   &-leave {
-    opacity: 0;
-    transform: scale(.98);
+    animation: wv-dialog-leave $transition-time $transition-function;
   }
 }
 
-.dialog-overlay {
+
+.wv-dialog-overlay {
   &-transition {
     transition: $transition-time opacity;
   }
@@ -22,5 +17,23 @@
   &-enter,
   &-leave {
     opacity: 0;
+  }
+}
+
+
+
+
+
+@keyframes wv-dialog-enter {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes wv-dialog-leave {
+  to {
+    opacity: 0;
+    transform: scale(.98);
   }
 }

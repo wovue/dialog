@@ -5,15 +5,14 @@
       :style="{backgroundColor: overlayBackground}"
       @click.stop="close"
       v-if="isOpen"
-      transition="dialog-overlay"
-      @transitionend="onTransitionEnd"
+      transition="wv-dialog-overlay"
       tabindex="-1"
     ></div>
     <div
       class="c-dialog"
       @click.stop="close"
       v-show="isOpen"
-      transition="dialog-overlay"
+      transition="wv-dialog-overlay"
       :aria-labelledby="ariaLabelledby"
       :aria-describedby="ariaDescribedby"
       role="dialog"
@@ -24,7 +23,8 @@
         :style="{maxWidth: dialogMaxWidth}"
         v-el:dialog-content
         v-show="isOpen"
-        transition="dialog"
+        @animationend="onTransitionEnd"
+        transition="wv-dialog"
         role="document"
       >
         <slot></slot>
