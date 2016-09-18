@@ -59,13 +59,13 @@ animation<template>
               type: '`Boolean`',
               required: 'false',
               default: '`true`',
-              description: 'This determines if pressing the `esc` key will close the modal.'
+              description: 'This determines if pressing the `esc` key will close the Dialog.'
             }, {
               name: 'closeOnOutsideClick',
               type: '`Boolean`',
               required: 'false',
               default: '`true`',
-              description: 'This determines if clicking on the overlay will close the modal.'
+              description: 'This determines if clicking on the overlay will close the Dialog.'
             }, {
               name: 'ariaLabelledby',
               type: '`String`',
