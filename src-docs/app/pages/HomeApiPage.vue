@@ -1,4 +1,4 @@
-<template>
+animation<template>
   <section class="c-main__sub-section">
     <h3 class="c-main__sub-heading u-gutter">API</h3>
     <div class="c-item u-gutter">
@@ -84,11 +84,11 @@
             {
               name: 'opened',
               type: 'emitted',
-              description: 'Fired when the Dialog is opened. The transition starts.'
+              description: 'Fired when the Dialog is opened. The animation starts.'
             }, {
               name: 'closed',
               type: 'emitted',
-              description: 'Fired when the Dialog is closed. The transition ends.'
+              description: 'Fired when the Dialog is closed. The animation ends.'
             }
           ]
         }
