@@ -2,7 +2,48 @@
 
 > Dialog (Modal) component for Vue.js
 
-## Build Setup
+Create dialogs with different styles.
+
+## Live examples & Docs
+
+[https://wovue.github.io/dialog](https://wovue.github.io/dialog)
+
+## Features
+
+* a11y friendly
+
+## Getting Started
+
+Install the package using npm
+
+```sh
+$ npm install wovue-dialog --save
+```
+
+Install the plugin
+
+```js
+require('wovue-dialog/dist/dialog.css')
+
+import Vue from 'vue'
+import Dialog from 'wovue-dialog'
+
+Vue.use(Dialog)
+```
+
+**Note** only with `webpack` you can import `CSS` in javascript.
+
+## Basic Usage
+
+```html
+<button v-dialog:toggle="dialog">Open dialog</button>
+<wv-dialog ref="dialog">
+  <h1>Hello</h1>
+  <button v-dialog:toggle="dialog">Close dialog</button>
+</wv-dialog>
+```
+
+## Development
 
 ``` bash
 # install dependencies
@@ -20,11 +61,6 @@ npm run deploy-docs
 # run unit tests
 npm run unit
 
-# run e2e tests
-npm run e2e
-
 # run all tests
 npm test
 ```
-
-For detailed explanation on how things work, checkout the [webpack template guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
