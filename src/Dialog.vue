@@ -47,8 +47,8 @@
         default: false
       }, {
         name: 'width',
-        type: Number,
-        default: 300
+        type: [Number, String],
+        default: false
       }, {
         name: 'ref',
         type: String,
@@ -78,7 +78,17 @@
     },
     computed: {
       dialogMaxWidth () {
-        return `${this.width}px`
+        if (!this.width) {
+          return false
+        }
+
+        if (typeof this.width === 'number') {
+          return `${this.width}px`
+        }
+
+        if (typeof this.width === 'string') {
+          return this.width
+        }
       }
     },
     ready () {
