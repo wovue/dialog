@@ -9,7 +9,7 @@
     color: $color-primary;
     font-weight: normal;
     font: .95em/1.35 'Fira mono', monospace, monospace;
-    white-space: nowrap;
+    white-space: wrap;
   }
 
   @include element('heading') {
