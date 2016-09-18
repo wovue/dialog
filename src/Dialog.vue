@@ -6,6 +6,7 @@
       @click.stop="close"
       v-if="isOpen"
       transition="dialog-overlay"
+      @transitionend="onTransitionEnd"
       tabindex="-1"
     ></div>
     <div
