@@ -28,8 +28,6 @@
   },
   "homepage": "https://wovue.github.io/dialog",
   "dependencies": {
-    "dom-classlist": "^1.0.1",
-    "vue": "^1.0.21",
     "wocss-tools-bem-constructor": "^1.0.3"
   },
   "peerDependencies": {
@@ -103,6 +101,7 @@
     "vue-html-loader": "^1.0.0",
     "vue-loader": "^8.3.0",
     "vue-style-loader": "^1.0.0",
+    "vue": "^1.0.21",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0",
