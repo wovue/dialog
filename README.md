@@ -11,6 +11,7 @@ Create dialogs with different styles.
 ## Features
 
 * a11y friendly
+* Perfect vertical centering.
 
 ## Getting Started
 
