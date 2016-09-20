@@ -12,6 +12,14 @@
         <p>If you are working with <code>Browserify</code>, you will have to add the css separately.</p>
       </div>
       <div class="c-item__code-wrapper" v-html="snippets.installationCommonjs"></div>
+      <div class="c-item__description">
+        <p>Alternatively you can add it to your components options.</p>
+      </div>
+      <div class="c-item__code-wrapper" v-html="snippets.installationCommonjsAlternative"></div>
+      <div class="c-item__description">
+        <p>or register the component and the directive with other name.</p>
+      </div>
+      <div class="c-item__code-wrapper" v-html="snippets.installationCommonjsAlternative2"></div>
       <h4 class="c-item__heading">Direct include (Browser)</h4>
       <div class="c-item__description">
         <p>Include it directly with a <code>&lt;script&gt;</code> tag. In this case, you don't need to write <code>Vue.use(Dialog)</code>, this will be done automatically for you.</p>
@@ -25,6 +33,8 @@
   import installation from 'src-docs/app/snippets/installation.md'
   import installationInclude from 'src-docs/app/snippets/installation-include.md'
   import installationCommonjs from 'src-docs/app/snippets/installation-commonjs.md'
+  import installationCommonjsAlternative from 'src-docs/app/snippets/installation-commonjs-alternative.md'
+  import installationCommonjsAlternative2 from 'src-docs/app/snippets/installation-commonjs-alternative2.md'
 
   export default {
     name: 'HomeDefaultPage',
@@ -33,7 +43,9 @@
         snippets: {
           installationInclude,
           installation,
-          installationCommonjs
+          installationCommonjs,
+          installationCommonjsAlternative,
+          installationCommonjsAlternative2
         }
       }
     }

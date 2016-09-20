@@ -27,3 +27,4 @@ if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.directive('dialog', directive)
 }
 export default dialogPlugin
+export {Dialog as component, toggleDialog, directive}
