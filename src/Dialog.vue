@@ -1,5 +1,5 @@
 <template>
-  <div :aria-hidden="`${!isOpen}`">
+  <div :aria-hidden="`${ariaHidden}`">
     <div
       class="c-dialog-overlay"
       :style="{backgroundColor: overlayBackground}"
@@ -74,7 +74,8 @@
     ],
     data () {
       return {
-        isOpen: false
+        isOpen: false,
+        ariaHidden: true
       }
     },
     computed: {
@@ -133,12 +134,14 @@
       },
       open () {
         this.isOpen = true
+        this.ariaHidden = false
         this.$emit('opened')
         // TODO: añadir aria-hidden true al rootEl
         // TODO: añadir overflow hidden al html
       },
       onTransitionEnd () {
         if (!this.isOpen) {
+          this.ariaHidden = true
           this.$emit('closed')
           // TODO: añadir aria-hidden false al rootEl
           // TODO: remover overflow hidden al html
