@@ -109,13 +109,27 @@
           this.close()
         }
       },
-      onToggle (dialogRef) {
-        if (this.ref === dialogRef) {
-          if (this.isOpen) {
-            this.close()
-          } else {
-            this.open()
+      onToggle (dialogRef, actionType) {
+        if (this.ref !== dialogRef) return
+
+        switch (actionType) {
+          case 'toggle': {
+            if (this.isOpen) {
+              this.close()
+            } else {
+              this.open()
+            }
+            break
           }
+          case 'close': {
+            this.close()
+            break
+          }
+          case 'open': {
+            this.open()
+            break
+          }
+          default: {}
         }
       },
       close (event) {

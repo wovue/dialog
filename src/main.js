@@ -1,7 +1,7 @@
 require('./styles/main.scss')
 
 import Dialog from './Dialog'
-import {directive, toggleDialog} from './directive'
+import {directive, toggleDialog, closeDialog, openDialog} from './directive'
 
 let Vue
 
@@ -14,7 +14,9 @@ const dialogPlugin = {
       Vue.prototype.$wv = {}
     }
     Vue.prototype.$wv.dialog = {
-      toggle: toggleDialog
+      toggle: toggleDialog,
+      close: closeDialog,
+      open: openDialog
     }
 
     Vue.component('wv-dialog', Dialog)
@@ -27,4 +29,4 @@ if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.directive('dialog', directive)
 }
 export default dialogPlugin
-export {Dialog as component, toggleDialog, directive}
+export {Dialog as component, toggleDialog, closeDialog, openDialog, directive}
