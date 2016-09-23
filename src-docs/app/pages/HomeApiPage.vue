@@ -24,8 +24,8 @@ animation<template>
             {
               expression: 'Dialog identifier. (the `ref` prop from the Dialog)',
               expects: 'String',
-              argument: 'toggle',
-              description: 'Toggle the Dialog on click.',
+              argument: 'toggle|open|close',
+              description: 'Toggle|Open|Close the Dialog on click.',
               example: '`<button v-dialog:toggle="stuff">Open</button>`'
             }
           ],

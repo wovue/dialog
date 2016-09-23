@@ -1,7 +1,8 @@
 ```html
-<button v-dialog:toggle="dialog" type="button">Open dialog</button>
-<wv-dialog ref="dialog" :close-on-esc="false">
+<button v-dialog:toggle="dialog">Open</button>
+
+<wv-dialog ref="dialog" :close-on-esc="false" :close-on-outside-click="false">
   <h1>Hello</h1>
-  <button v-dialog:toggle="dialog" type="button">Close dialog</button>
+  <button v-dialog:toggle="dialog">Close</button>
 </wv-dialog>
 ```

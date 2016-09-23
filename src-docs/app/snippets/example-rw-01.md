@@ -1,26 +1,24 @@
 ```html
-<div>
-  <button v-dialog:toggle="dialog" type="button">Open dialog</button>
-  <wv-dialog
-    class="modal"
-    ref="dialog"
-    :width="600"
-    @closed="onClosed"
-    aria-labelledby="title"
-    aria-describedby="description"
-  >
-    <h1 id="title">Hello</h1>
-    <p id="description">...</p>
-    <button v-dialog:toggle="dialog" type="button">Close dialog</button>
-    <!-- lorem content -->
-    <button v-dialog:toggle="dialog" type="button">Close dialog</button>
-  </wv-dialog>
-</div>
+<button v-dialog:toggle="dialog">Open</button>
+
+<wv-dialog
+  class="modal"
+  ref="dialog"
+  :width="600"
+  @closed="onClosed"
+  aria-labelledby="title"
+  aria-describedby="description"
+>
+  <h1 id="title">Hello</h1>
+  <p id="description">...</p>
+  <button v-dialog:toggle="dialog">Close</button>
+  <!-- lorem content -->
+  <button v-dialog:toggle="dialog">Close</button>
+</wv-dialog>
 ```
 
 ```js
 export default {
-  // ...
   methods: {
     onClosed () {
       window.alert('Dialog closed')
