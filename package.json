@@ -28,6 +28,7 @@
   },
   "homepage": "https://wovue.github.io/dialog",
   "dependencies": {
+    "object-assign": "^4.1.0",
     "wocss-tools-bem-constructor": "^1.0.3"
   },
   "peerDependencies": {
