@@ -14,6 +14,6 @@
   color: #ffffff;
   padding: 2rem;
   text-align: center;
-  width: 50rem;
+  max-width: 50rem;
 }
 ```
