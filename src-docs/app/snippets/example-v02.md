@@ -1,7 +1,19 @@
 ```html
-<button v-dialog:toggle="dialog2" type="button">Open dialog</button>
-<wv-dialog ref="dialog2" :close-on-outside-click="false">
+<button v-dialog:toggle="dialog2">Open</button>
+<wv-dialog ref="dialog2" class="my-modal">
   <h1>Hello</h1>
-  <button v-dialog:toggle="dialog2" type="button">Close dialog</button>
+  <!-- lorem -->
+  <button v-dialog:toggle="dialog2">Close</button>
 </wv-dialog>
+```
+
+```scss
+.my-modal {
+  background-color: #F1524B;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  width: 50rem;
+}
 ```

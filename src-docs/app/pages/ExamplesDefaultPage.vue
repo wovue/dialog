@@ -23,7 +23,7 @@
       <div class="c-item__description">
         <ul>
           <li>Custom styles</li>
-          <li>Custmon width</li>
+          <li>Custom width</li>
         </ul>
       </div>
       <h5 class="c-item__sub-heading">Code:</h5>
@@ -31,7 +31,7 @@
       <h5 class="c-item__sub-heading">Result:</h5>
       <div class="c-play-around">
         <button v-dialog:toggle="dialog2" type="button">Open</button>
-        <wv-dialog ref="dialog2" class="my-modal" width="50rem">
+        <wv-dialog ref="dialog2" class="my-modal">
           <h1>Hello</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <button v-dialog:toggle="dialog2" type="button">Close</button>
@@ -65,6 +65,7 @@
     color: #ffffff;
     padding: 2rem;
     text-align: center;
+    width: 50rem;
 
     button {
       font-size: 1.25rem;
