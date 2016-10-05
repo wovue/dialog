@@ -134,14 +134,15 @@
       },
       close (event) {
         if (event) {
-          if (!this.closeOnOutsideClick) {
-            return
-          }
+          if (!this.closeOnOutsideClick) return
 
           // check if click inside
           if (event.target === this.$els.dialogContent || this.$els.dialogContent.contains(event.target)) {
             return
           }
+
+          // return if event.target doesn't exist
+          if (!window.document.contains(event.target)) return
         }
 
         this.isOpen = false
